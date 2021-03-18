@@ -1,7 +1,7 @@
 .about{
     position: relative;
     margin: auto;
-    transform: translateY(50%);
+    transform: translateY(60%);
     background-color: royalblue;
     border-radius: 20px;
     box-shadow: 5px 5px 5px -1px rgb(0,0,0); 
