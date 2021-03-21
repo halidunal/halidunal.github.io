@@ -1,6 +1,6 @@
 # https://halidunal.github.io/
 
-![gh-pages](https://user-images.githubusercontent.com/59025659/111676070-d77b7e80-882e-11eb-89dc-486886d87b31.JPG)
+![github io](https://user-images.githubusercontent.com/59025659/111909456-6f1ae000-8a6e-11eb-9855-99ee9e1c2f19.JPG)
 
 # Getting Started with Create React App
 
