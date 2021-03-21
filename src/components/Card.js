@@ -21,8 +21,8 @@ export default class Card extends Component {
                 <div className="flex">
                     <div className="images">
                         <div className="icons">
-                            <a className="icon" href="https://github.com/halidunal/" target="_blank">
-                                <img src={github}/>
+                            <a className="icon" href="https://github.com/halidunal/" target="_blank" >
+                                <img src={github} style={{marginTop:1.5}}/>
                             </a>
                         </div>  
                         <div className="icons">
