@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27d077b6.chunk.css",
+    "main.js": "/static/js/main.10404d2c.chunk.js",
+    "main.js.map": "/static/js/main.10404d2c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3def2e50.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3def2e50.js.map",
+    "static/js/2.1780664e.chunk.js": "/static/js/2.1780664e.chunk.js",
+    "static/js/2.1780664e.chunk.js.map": "/static/js/2.1780664e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.27d077b6.chunk.css.map": "/static/css/main.27d077b6.chunk.css.map",
+    "static/js/2.1780664e.chunk.js.LICENSE.txt": "/static/js/2.1780664e.chunk.js.LICENSE.txt",
+    "static/media/avatar.b9d8769a.png": "/static/media/avatar.b9d8769a.png",
+    "static/media/en-flag.ece4efc7.png": "/static/media/en-flag.ece4efc7.png",
+    "static/media/github-brands.e2f07326.svg": "/static/media/github-brands.e2f07326.svg",
+    "static/media/instagram-brands.248953a2.svg": "/static/media/instagram-brands.248953a2.svg",
+    "static/media/linkedin-brands.f4041044.svg": "/static/media/linkedin-brands.f4041044.svg",
+    "static/media/pp.68317fab.jpg": "/static/media/pp.68317fab.jpg",
+    "static/media/tr-flag.488bbfc4.png": "/static/media/tr-flag.488bbfc4.png",
+    "static/media/index.css": "/static/media/website+background.233ff949.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3def2e50.js",
+    "static/js/2.1780664e.chunk.js",
+    "static/css/main.27d077b6.chunk.css",
+    "static/js/main.10404d2c.chunk.js"
+  ]
+}
