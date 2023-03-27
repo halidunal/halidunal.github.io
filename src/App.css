@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.about{
+  text-align: left;
+  padding-top: 120px;
+  margin: 0 25% 60px 25%;
+  height: "100vh";
+}
+
+@media only screen and (max-width: 800px){
+  .about{
+    margin: 0 15% 60px 15%;
+  }
+}
+
+.about-content{
+  text-align: justify;
+  background-color: white;
+  padding: 5px 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px -1px rgb(0,0,0);
+}
