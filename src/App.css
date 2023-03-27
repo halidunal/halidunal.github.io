@@ -9,11 +9,18 @@
   height: "100vh";
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
   .about{
     margin: 0 15% 60px 15%;
   }
 }
+
+@media only screen and (max-width: 600px){
+  .about{
+    margin: 0 5% 60px 5%;
+  }
+}
+
 
 .about-content{
   text-align: justify;
