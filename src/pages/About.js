@@ -20,15 +20,17 @@ function About() {
         "Saygılarımla."
     ]:[
         "Hi,",
-        "I am a full stack software developer with close to three years of experience. I also have an associate degree in Web Design and Coding and a bachelor's degree in Statistics.",
+        "I have completed my undergraduate education in the field of statistics. After receiving programming language training in this field, I decided to develop myself in the software industry and specialize in this sector. I am also a graduate of the Web Design and Coding associate degree program. I have been continuing my career for over 3 years as a FullStack Developer.",
         "During my professional career I have:",
-        "• Development and maintenance of responsive UI desings and mobile application (#.Net Core MVC, #JavaScript, #TypeScript, #HTML5, #CSS3).",
-        "• Used some JavaScript Technologies (#jQuery, #React, #Angular, #ReactNative, #NativeScript).",
-        "• Worked with version control systems (#GIT, #TFS).",
-        "• Worked with database technologies (#MSSQL, #PostgreSQL, #Firebase).",
-        "• Trainer & Instructor for middle level of understanding for programming.",
+        "• I developed responsive UI designs with .NET Core MVC, JavaScript, TypeScript, HTML5, and CCS3 technologies.",
+        "• I participated in the development and maintenance processes of various web applications using JavaScript libraries such as jQuery, React, Angular, and KnockOut.",
+        "• I participated in the development and maintenance processes of various mobile applications using JavaScript libraries such as NativeScript and ReactNative.",
+        "• I worked with SQL (#MSSQL, #PostgreSQL, #Firebase) and versioning technologies (#Git, #TFS).",
+        "• I wrote RESTful services and performed unit tests for the software I developed using xUnit.",
         "• Provided visual support and solutions to the software I developed with my graphic design experience of more than 2 years.",
-        "I like my job as one of my hobbies so I can not stop myself of learning anything in cyber space. Also I have analytical thinking, individual-group work, effective learning and time management competencies. I am sensitive about responsibility and business seriousness."
+        "• I participated in the development process of various e-Transformation projects and gained experience in GIS.",
+        "I consider my work as one of my hobbies, so I cannot refrain from learning something new in the cyberspace. I also possess analytical thinking, individual-group work, effective learning, and time management skills. I am sensitive about responsibility and work ethics.",
+        "Best regards."
     ]
   return (
     <div className='about'>
