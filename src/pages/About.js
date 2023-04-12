@@ -7,7 +7,7 @@ function About() {
 
     const text = page.language === "tr" ? [
         "Merhaba,",
-        "Lisans eğitimimi istatistik alanında tamamladım. Bu alanda almış olduğum programlama dili eğitimleri sonrası kendimi yazılım alanında geliştirmeye ve bu sektörde profesyonelleşmeye karar verdim. Ayrıca Web Tasarım ve Kodlama önlisans bölümü mezunuyum. 3 yılı aşkın kariyerime FullStack Developer olarak devam etmekteyim.",
+        "Anadolu Üniversitesi İstatistik bölümü mezunuyum. Bu alanda almış olduğum programlama dili eğitimleri sonrası kendimi yazılım alanında geliştirmeye ve bu sektörde profesyonelleşmeye karar verdim. Ayrıca Web Tasarım ve Kodlama önlisans bölümü mezunuyum. 3 yılı aşkın kariyerime FullStack Developer olarak devam etmekteyim.",
         "Profesyonel kariyerim boyunca:",
         "• .NET Core MVC, JavaScript, TypeScript, HTML5 ve CCS3 teknolojileriyle responsive UI tasarımları geliştirdim.",
         "• jQuery, React, Angular ve KnockOut gibi JavaScript kütüphaneleri kullanarak çeşitli web yazılımlarının geliştirme ve bakım sürecinde görev aldım.",
@@ -15,12 +15,12 @@ function About() {
         "• SQL(#MSSQL, #PostgreSQL, #Firebase) ve versiyonlama teknolojileriyle(#Git, #TFS) çalıştım.",
         "• RESTful servisler yazdım. xUnit ile geliştirdiğim yazılımların birim teslerini yaptım.",
         "• 2 yıldan fazla grafik tasarım tecrübemle geliştirdiğim yazılımlara görsel destek ve çözümler sağladım.",
-        "• Çeşitli e-Dönüşüm projelerinin geliştirme sürecinde görev aldım ve GIS hakkında tecrübe oldum.",
+        "• Çeşitli e-Dönüşüm projelerinin geliştirme sürecinde görev aldım ve GIS hakkında tecrübe sahibi oldum.",
         "İşimi hobilerimden biri olarak görüyorum o yüzden siber uzayda bir şey öğrenmekten kendimi alıkoyamıyorum. Ayrıca analitik düşünme, bireysel-grup halinde çalışma, etkili öğrenme ve zaman yönetimi yetkinliklerine sahibim. Sorumluluk bilinci ve iş ciddiyeti konularında hassasiyet sahibiyim.",
         "Saygılarımla."
     ]:[
         "Hi,",
-        "I have completed my undergraduate education in the field of statistics. After receiving programming language training in this field, I decided to develop myself in the software industry and specialize in this sector. I am also a graduate of the Web Design and Coding associate degree program. I have been continuing my career for over 3 years as a FullStack Developer.",
+        "I graduated from Anadolu University, Department of Statistics. After receiving programming language training in this field, I decided to develop myself in the software industry and specialize in this sector. I am also a graduate of the Web Design and Coding associate degree program. I have been continuing my career for over 3 years as a FullStack Developer.",
         "During my professional career I have:",
         "• I developed responsive UI designs with .NET Core MVC, JavaScript, TypeScript, HTML5, and CCS3 technologies.",
         "• I participated in the development and maintenance processes of various web applications using JavaScript libraries such as jQuery, React, Angular, and KnockOut.",
