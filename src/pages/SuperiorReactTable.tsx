@@ -279,16 +279,16 @@ function SuperiorReactTable(props: any){
 		setLanguage(e.target.value)
 	}
 	const handleChangeAddable = (e: any) =>{
-		setAddable(e.target.value)
+    e.target.value == "false" ? setAddable(false) : setAddable(true)
 	}
 	const handleChangeEditable = (e: any) =>{
 		setEditable(e.target.value)
 	}
 	const handleChangeRemoveAll = (e: any) =>{
-		setRemoveAll(e.target.value)
+    e.target.value == "false" ? setRemoveAll(false) : setRemoveAll(true)
 	}
 	const handleChangeSearchable = (e: any) =>{
-		setSearchable(e.target.value)
+    e.target.value == "false" ? setSearchable(false) : setSearchable(true)
 	}
 	const handleChangeDataPerPage = (e: any) =>{
     console.log(e)
