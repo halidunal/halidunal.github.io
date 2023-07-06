@@ -2,11 +2,18 @@
   box-sizing: border-box;
 }
 
+.App{
+  position: relative;
+  z-index: -2;
+}
+
 a{
   color: #000;
 }
 
 .home{
+  position: relative;
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;

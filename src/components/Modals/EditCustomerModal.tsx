@@ -4,7 +4,7 @@ import "./style.css";
 // import { updateEmployee } from '../../store/services/employeesService';
 import Dropdown from '../Dropdown';
 import {FaExclamationCircle} from 'react-icons/fa';
-import { ICustomer } from '../../Models/CustemerModal';
+import { ICustomer } from '../../Models/CustemerModel';
 import handleEditRowSubmit from "../../pages/SuperiorReactTable"
 
 function EditCustomerModal(props: any) {

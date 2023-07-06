@@ -23,8 +23,15 @@ function Portfolio() {
         </a>
       </div>
       <div className="portfolio-card">
+        <a href="https://github.com/halidunal/react-ecommerce-app">
+          <h3>• React E-commerce App</h3>
+          <p>Sample ecommerce, shop app with react</p>
+          <p>#React, #Redux, #Tailwind, #FakeStoreAPI</p>
+        </a>
+      </div>
+      <div className="portfolio-card">
         <a href="https://github.com/halidunal/angular-ecommerce-app">
-          <h3>• Ecommerce App</h3>
+          <h3>• Angular E-commerce App</h3>
           <p>Sample ecommerce, shop app with angular</p>
           <p>#Angular, #Rxjs, #Ngrx, #Firebase, #Bootstrap, #FakeStoreAPI</p>
         </a>

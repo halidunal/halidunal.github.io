@@ -147,6 +147,7 @@ function Card() {
             <div style={{ padding: "20px 0px 15px 0px" }}>
               <div className="icons">
                 <a
+                  data-role="button"
                   className="icon"
                   href="https://github.com/halidunal/"
                   target="blank"
