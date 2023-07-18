@@ -6,7 +6,7 @@ import { openModal } from '../store/services/modelService';
 import { toast } from 'react-hot-toast';
 
 function SuperiorReactTable(props: any){
-  const [editSelectedId,setEditSelectedId] = useState("");
+  const [editSelectedId,setEditSelectedId] = useState(0);
   const [theme,setTheme] = useState("dark");
   const [language,setLanguage] = useState("en");
   const [addable,setAddable] = useState(true);
@@ -18,7 +18,7 @@ function SuperiorReactTable(props: any){
   const [customers, setCustomers] = useState<ICustomer[]>(
     [
       {
-        "id": "1",
+        "id": 1,
         "last_name": "Doe",
         "first_name": "John",
         "email_address": "john@john.mail",
@@ -28,10 +28,10 @@ function SuperiorReactTable(props: any){
         "profession_code": 345,
         "birthday": "1981-06-11",
         "city": "New Jersey",
-        "gross_salary": "6000$-"
+        "gross_salary": "6000$+"
       },
       {
-        "id": "2",
+        "id": 2,
         "last_name": "Gratacos Solsona",
         "first_name": "Antonio",
         "email_address": "antonio@antonio.mail",
@@ -44,7 +44,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "-2000$"
       },
       {
-        "id": "3",
+        "id": 3,
         "last_name": "Axen",
         "first_name": "Thomas",
         "email_address": "thomas@thomas.mail",
@@ -56,7 +56,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "4000-6000$"
       },
       {
-        "id": "4",
+        "id": 4,
         "last_name": "Lee",
         "first_name": "Christina",
         "email_address": "christina@christina.mail",
@@ -69,7 +69,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "4000-6000$"
       },
       {
-        "id": "5",
+        "id": 5,
         "last_name": "O’Donnell",
         "first_name": "Martin",
         "email_address": "martin@marting.mail",
@@ -82,7 +82,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "2000-4000$"
       },
       {
-        "id": "6",
+        "id": 6,
         "last_name": "Pérez-Olaeta",
         "first_name": "Francisco",
         "email_address": "francisco@francisco.mail",
@@ -95,7 +95,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "4000-6000$"
       },
       {
-        "id": "7",
+        "id": 7,
         "last_name": "Xie",
         "first_name": "Ming-Yang",
         "email_address": "ming@ming.mail",
@@ -107,7 +107,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "4000-6000$"
       },
       {
-        "id": "8",
+        "id": 8,
         "last_name": "Andersen",
         "first_name": "Elizabeth",
         "email_address": "elizabeth@elizabeth.mail",
@@ -120,7 +120,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "4000-6000$"
       },
       {
-        "id": "9",
+        "id": 9,
         "last_name": "Mortensen",
         "first_name": "Sven",
         "email_address": "sven@sven.mail",
@@ -133,7 +133,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "2000-4000$"
       },
       {
-        "id": "10",
+        "id": 10,
         "last_name": "Wacker",
         "first_name": "Roland",
         "email_address": "roland@roland.mail",
@@ -146,7 +146,7 @@ function SuperiorReactTable(props: any){
         "gross_salary": "-2000$"
       },
       {
-        "id": "11",
+        "id": 11,
         "last_name": "Krschne",
         "first_name": "Peter",
         "email_address": "peter@peter.mail",
@@ -156,10 +156,10 @@ function SuperiorReactTable(props: any){
         "profession_code": 444,
         "birthday": "1996-04-09",
         "city": "Miami",
-        "gross_salary": "6000$-"
+        "gross_salary": "6000$+"
       },
       {
-        "id": "12",
+        "id": 12,
         "last_name": "Edwards",
         "first_name": "John",
         "email_address": "john@john.mail",
@@ -169,7 +169,7 @@ function SuperiorReactTable(props: any){
         "profession_code": 123,
         "birthday": "1995-03-19",
         "city": "Las Vegas",
-        "gross_salary": "6000$-"
+        "gross_salary": "6000$+"
       }
     ]
   );
@@ -228,7 +228,7 @@ function SuperiorReactTable(props: any){
     })
     if(isNew) {
       customers.shift();
-      editedData.id = customers.length ? ((customers[customers.length-1].id)++).toString() : "1";
+      editedData.id = customers.length ? (customers[customers.length-1].id)+1 : 1;
       setCustomers([editedData, ...customers]);
 			toast.success("Add process successful");
     }else{
@@ -236,7 +236,7 @@ function SuperiorReactTable(props: any){
       customers[index] = editedData;
 			toast.success("Update process successful");
     }
-    setEditSelectedId("");
+    setEditSelectedId(0);
   };
 
   const handleRemove = (id: string) => {
@@ -253,19 +253,18 @@ function SuperiorReactTable(props: any){
     Object.keys(editRowData).map((item: any) => {
       editRowData[item as keyof ICustomer] = "";
     })
-    setEditSelectedId("none");
+    setEditSelectedId(0);
     if(!customers.length) {
-      setCustomers([{id:"none",...editRowData}, ...customers]);
+      setCustomers([{id:0,...editRowData}, ...customers]);
     }else{
-      if(customers[0].id !== "none") setCustomers([{id:"none",...editRowData}, ...customers]);
+      if(customers[0].id != 0) setCustomers([{id:0,...editRowData}, ...customers]);
     }
   }
 
   const handleClose = (isNew: boolean) => {
-    setEditSelectedId("");
+    setEditSelectedId(0);
     if(isNew) {
-      customers.shift();
-    }
+      setCustomers(customers.filter(item => item.id !== 0))    }
   }
 
   const handleOpenModal = (customer: ICustomer) =>{

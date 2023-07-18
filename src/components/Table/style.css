@@ -49,6 +49,7 @@ ul {
     background-color: #fff;
     border-radius: 5px;
     text-align: left;
+    color: #000;
 }
 
 .table-container{
@@ -62,7 +63,7 @@ ul {
 
 .table-container-dark{
     background-color: #283237;
-    border: 1px solid #283237;
+    border: 1px solid #4c4e50;
 }
 
 .table-responsive{
@@ -243,7 +244,7 @@ ul {
 .table-paging-dark{
     background-color:#283237;
     border-top: 1px solid #4c4e50;
-    border: 1px solid #283237;
+    border: 1px solid #4c4e50;
 }
 
 @media (max-width: 700px){

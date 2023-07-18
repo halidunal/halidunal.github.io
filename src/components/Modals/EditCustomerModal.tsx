@@ -4,12 +4,12 @@ import "./style.css";
 // import { updateEmployee } from '../../store/services/employeesService';
 import Dropdown from '../Dropdown';
 import {FaExclamationCircle} from 'react-icons/fa';
-import { ICustomer } from '../../Models/CustemerModel';
+import { ICustomer } from '../../models/CustemerModel';
 import handleEditRowSubmit from "../../pages/SuperiorReactTable"
 
 function EditCustomerModal(props: any) {
   const nullData : ICustomer = {
-		id: "",
+		id: 0,
     last_name: "",
     first_name: "",
     email_address: "",
@@ -95,8 +95,8 @@ function EditCustomerModal(props: any) {
         </div>
       </form>
       <div className='modal-footer'>
-        <button className='h-button h-purple-primary' onClick={handleSubmit} style={{marginRight: 5}}>Kaydet</button>
-        <button className='h-button h-purple-secondary' onClick={props.close}>İptal</button>
+        <button className='h-button h-purple-primary' onClick={handleSubmit} style={{marginRight: 5}}>Save</button>
+        <button className='h-button h-purple-secondary' onClick={props.close}>Cancel</button>
       </div>
     </>
   )
