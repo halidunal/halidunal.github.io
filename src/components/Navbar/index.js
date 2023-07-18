@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import trFlag from "../../assets/tr-flag.png";
@@ -9,9 +9,10 @@ import { FaBars } from "react-icons/fa";
 
 function Navbar(props) {
   const page = useSelector((state) => state.page);
+  const [toggle,SetToggle] = useState(false)
   return (
     <div className="navbar">
-      <FaBars className="toggle" onClick={toggle} style={{ fontSize: 25 }} />
+      <FaBars className="toggle" onClick={() => SetToggle(!toggle)} style={{ fontSize: 25 }} />
       <div className="navbar-left">
         <Link to="/">{page.language === "tr" ? "Ana Sayfa" : "Home"}</Link>
         <Link to="/about" className="navbar-a">
@@ -21,7 +22,7 @@ function Navbar(props) {
           {page.language === "tr" ? "Portfolyo" : "Portfolio"}
         </Link>
       </div>
-      <div className="navbar-dropdown">
+      <div className={toggle ? "navbar-dropdown open" : "navbar-dropdown"}>
         <Link to="/">{page.language === "tr" ? "Ana Sayfa" : "Home"}</Link>
         <Link to="/about" className="navbar-a">
           {page.language === "tr" ? "Hakkımda" : "About"}
@@ -49,10 +50,6 @@ function Navbar(props) {
     </div>
   );
 }
-
-const toggle = () => {
-  document.querySelector(".navbar-dropdown").classList.toggle("open");
-};
 
 const mapStateToProps = (state) => {
   return {

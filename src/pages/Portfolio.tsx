@@ -16,28 +16,35 @@ function Portfolio() {
         </Link>
       </div>
       <div className="portfolio-card">
-        <a href="https://github.com/halidunal/halidunal.github.io">
+        <a href="https://github.com/halidunal/post-app" target="blank">
+          <h3>• Post App</h3>
+          <p>Sample MERN stack app</p>
+          <p>#React, #Redux, #Express, #NodeJS, #MongoDB, #Tailwind, #JWT (MERN)</p>
+        </a>
+      </div>
+      <div className="portfolio-card">
+        <a href="https://github.com/halidunal/halidunal.github.io"  target="blank">
           <h3>• Github.io</h3>
           <p>Personel web site with github.io</p>
           <p>#React, #Redux, #Typescript</p>
         </a>
       </div>
       <div className="portfolio-card">
-        <a href="https://github.com/halidunal/react-ecommerce-app">
+        <a href="https://github.com/halidunal/react-ecommerce-app" target="blank">
           <h3>• React E-commerce App</h3>
           <p>Sample ecommerce, shop app with react</p>
           <p>#React, #Redux, #Tailwind, #FakeStoreAPI</p>
         </a>
       </div>
       <div className="portfolio-card">
-        <a href="https://github.com/halidunal/angular-ecommerce-app">
+        <a href="https://github.com/halidunal/angular-ecommerce-app" target="blank">
           <h3>• Angular E-commerce App</h3>
           <p>Sample ecommerce, shop app with angular</p>
           <p>#Angular, #Rxjs, #Ngrx, #Firebase, #Bootstrap, #FakeStoreAPI</p>
         </a>
       </div>
       <div className="portfolio-card">
-        <a href="https://github.com/halidunal/pokemon-app">
+        <a href="https://github.com/halidunal/pokemon-app" target="blank">
           <h3>• Pokemon App</h3>
           <p>Sample react app</p>
           <p>#React, #PokeAPI</p>
